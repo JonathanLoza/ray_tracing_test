@@ -1,0 +1,20 @@
+Model          Vertices         Triangulos
+-------------------------------------------
+Conference     166940           282759
+Fairyforest    97124            95916 
+Sibenik        43085            80131
+Armadillo      106289           212574
+Tyrannosaurus  100002           200000
+Nefertiti      1009118          2018232
+buddha         49990            100000
+xyz_dragon     125066           49522
+San Diego      31518            39498
+Rungholt       2527838          5815444
+
+
+BVH                                Conference FairyForest  Sibenik   Armadillo  Tyrannosaurus   Nefertiti   Buddha   XYZ_dragon  San Diego  Rungholt
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+binned_sah_builder                   457ms     196ms        138ms     343ms       323ms         3190ms      192ms     96ms       105ms       10953ms
+sweep_sah_builder                    649ms     254ms        182ms     455ms       424ms         4815ms      245ms     115ms      121ms       16322ms
+linear_bvh_builder                   71ms      40ms         32ms      58ms        56ms          460ms       67ms      28ms       19ms        1653ms
+locally_ordered_clustering_builder   269ms     109ms        96ms      172ms       163ms         1695ms      139ms     75ms       63ms        5900ms
